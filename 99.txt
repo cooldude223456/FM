@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta http-equiv="X-UA-Compatible"content="content=ie=edge">
+	<link rel="stylesheet" type="text/css" href="02.css">
+	<title>Website</title>
+</head>
+<body>
+	<div class="top1">
+	   <p>REEVS AND FELLOWS CORP</p>
+	</div>
+	<header>
+    <h1>Future Mothership</h1>
+    <h2>Browse the beginings</h2>
+	</header>
+  <div class="container">
+    <div class="assetcontent">
+      <h2 style="color: teal">ASSETS</h2>
+      <div class="row">
+        <div class="column">
+          <h3>Creative</h3>
+          <p>Development of The Human Creative Capital</p>
+        </div>
+        <div class="column">
+          <h3>Social Media</h3>
+          <p>Creation of Content and Entertainment</p>
+        </div>
+        <div class="column">
+          <h3>Business</h3>
+          <p>Development of Futuristic Thinking and Ideas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="awardcontent">
+    <h2 style="color: teal">AWARDS</h2>
+    <p>York Award,York Award,York Award,York Award,York Award,York Award,York Award,York Award</p>
+  </div>
+  <div class="wrapper">
+    <input type="button" onclick="myFunction()" class="button" value="Contact Me">
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("theEmail");
+      if (x.style.display === "block") (
+      x.style.display = "none";
+      ) else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+CSS
+
+
+
+/* CSS Document */
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: Times New Roman, sans-serif;
+}
+
+body {
+	color: white;
+	font-family: Arial, sans-serif;
+	background-color: black;
+	margin: 0 auto;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	overflow-y: visible;
+	overflow-x: hidden;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+}
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	position: relative;
+	transform-style: inherit;
+	max-width: 1700px;
+	width: 100vw;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+header,
+header:before {
+	background: 50% 50%
+}
+
+header::before {
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background-image: url(https://cdn.wallpapersafari.com/43/83/VCljsR.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+header h1 {
+  position: absolute;
+  text-align: center;
+  left: 50px;
+  right: 50px;
+  font-size: 200%;
+  top: 10%;
+}
+
+header h2 {
+  position: absolute;
+  text-align: center;
+  left: 50px;
+  right: 50px;
+  top: 25%;
+
+  font-style: italic;
+  font-size: small;
+  text-transform: lowercase;
+}
+
+.top1 {
+	padding: 10px;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+.container {
+  z-index: 2;
+  position: absolute;
+  top: 100vh;
+  background: black;
+  line-height: 200px;
+  font-weight: lighter;
+  color: grey;
+}
+
+.assetcontent {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #202020;
+}
+
+.awardcontent{
+  padding-top: 10px;
+  width: 60%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.awardcontent p{
+  color: grey;
+}
+
+.column {
+  color: white;
+  background-color: #202020;
+  text-align: center;
+  float: left;
+  width: 33.33%;
+  margin: 0 auto;
+  padding: 10px;
+  height: auto;
+}
+
+.column p{
+  text-align: center;
+  color: grey;
+  font-style: italic;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 0px;
+}
